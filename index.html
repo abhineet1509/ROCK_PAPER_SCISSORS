@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ROCK_PAPER_SCISSORS</title>
+</head>
+<body>
+    <div class="container">
+        <div class="items">  
+            <div class="message">
+                <img  id="lose" src="IMAGES\62e858581f694027a56caf1bc08f33ce.png">
+                <img id="win" src="IMAGES\pngwing.com.png">
+                <p id="draw">DRAW</p>
+            </div>
+            <div class="choices">
+            <div class="user-choices">
+                <img class="image" id="scissors" src="IMAGES\1.png">
+                <img class="image" id="rock" src="IMAGES\2.png">
+                <img class="image" id="paper" src="IMAGES\3.png">
+            </div>
+               <div class="comp-choices">
+                   <img class="image" id="scissors" src="IMAGES\1.png">
+                   <img class="image" id="rock" src="IMAGES\2.png">
+                   <img class="image" id="paper" src="IMAGES\3.png">
+              </div>
+            </div>
+            <div class="score-card">
+                <div class="score">
+                    <h1 id="your-score">0</h1>
+                    <p>You</p>
+                </div>
+                <div class="score">
+                    <h1 id="comp-score">0</h1>
+                    <p>Computer</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="msg-container">
+        <p id="showPopupBtn">Exit Game</p>
+    </div>
+    <div id="popupCard" class="popup-card">
+        <div id="happyCard"> 
+            <img src="IMAGES\173986_minion_happy_icon.png">
+            <p id="happyScore"></p>
+            <p>Congratulations</p>
+            <button id="closePopupBtn">Restart</button>
+        </div>
+       <div id="sadCard">
+        <img src="IMAGES\173985_minion_curious_icon.png">
+        <p id="sadScore"></p>
+        <p>Oops!</p>
+        <button id="closePopupBtn">Restart</button>
+       </div>
+      </div>
+    <script src="script.js"></script>
+</body>
+</html>
