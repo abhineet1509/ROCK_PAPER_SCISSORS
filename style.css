@@ -12,14 +12,22 @@ body{
     font-family: 'Roboto', sans-serif;
     background: linear-gradient(to right,#2C3E50,#000000);
 }
+<<<<<<< HEAD
 .game-container{
+=======
+.container{
+>>>>>>> edccfb905789883a0171c606d97bd098b7939d03
     width: 100vw;
     height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+<<<<<<< HEAD
 .game-content{
+=======
+.items{
+>>>>>>> edccfb905789883a0171c606d97bd098b7939d03
     width: 80%;
     max-width: 1020px;
     border-radius: 10px;
@@ -49,17 +57,26 @@ body{
     position: relative;
     width: 100%;
 }
+<<<<<<< HEAD
 .player-choices img,.computer-choices img{
+=======
+.user-choices img,.comp-choices img{
+>>>>>>> edccfb905789883a0171c606d97bd098b7939d03
     width: 25%;
     height: 25%;
     cursor: pointer;
 }
 
+<<<<<<< HEAD
 .player-choices {
+=======
+.user-choices {
+>>>>>>> edccfb905789883a0171c606d97bd098b7939d03
     display: flex;
     flex-direction: column;
 }
 
+<<<<<<< HEAD
 .computer-choices {
     display: flex;
     align-items: flex-end;
@@ -67,6 +84,19 @@ body{
 }
 
 .scoreboard{
+=======
+.comp-choices {
+    display: flex;
+   align-items: flex-end;
+    flex-direction: column;
+}
+
+.comp-choices .image {
+    transform: scaleX(-1); 
+}
+
+.score-card{
+>>>>>>> edccfb905789883a0171c606d97bd098b7939d03
     gap: 50px;
     display: flex;
     flex-direction: row;
@@ -95,13 +125,21 @@ body{
     cursor: pointer;
 }
 
+<<<<<<< HEAD
 .result-modal {
+=======
+.popup-card {
+>>>>>>> edccfb905789883a0171c606d97bd098b7939d03
     display: none; 
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+<<<<<<< HEAD
     min-width: 30vw;
+=======
+    width: 30vw;
+>>>>>>> edccfb905789883a0171c606d97bd098b7939d03
     padding: 20px;
     background-color: #fff;
     text-align: center;
@@ -109,11 +147,16 @@ body{
     border-radius: 18px;
     z-index: 1000; 
   }
+<<<<<<< HEAD
   .choice-btn, .computer-choice {
     transition: transform 0.02s ease-in-out;
    } 
 
   #restart-game-button{
+=======
+
+  #closePopupBtn{
+>>>>>>> edccfb905789883a0171c606d97bd098b7939d03
     width: 30%;
     background: red;
     color: #fff;
