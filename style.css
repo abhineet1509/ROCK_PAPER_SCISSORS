@@ -1,0 +1,126 @@
+@font-face {
+    font-family: "PORKYS";
+    src: url('IMAGES/PORKYS_.TTF') format('truetype');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right,#2C3E50,#000000);
+}
+.game-container{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game-content{
+    width: 80%;
+    max-width: 1020px;
+    border-radius: 10px;
+    padding: 1rem 2.5rem;
+    border: 1px solid #fff;
+    color: #fff;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+#lose,#win,#draw{
+    width: 100px;
+    aspect-ratio: 1/1;
+    display: none;
+    position: absolute;
+    top:50px;
+    left:45%;
+    font-size: 60px;
+    font-weight: 600;
+    font-family: "PORKYS", sans-serif;
+}
+.choices{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+.player-choices img,.computer-choices img{
+    width: 25%;
+    height: 25%;
+    cursor: pointer;
+}
+
+.player-choices {
+    display: flex;
+    flex-direction: column;
+}
+
+.computer-choices {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.scoreboard{
+    gap: 50px;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left:45%;
+    text-align: center;
+}
+
+.score h1{
+    font-size: 5vw;
+    font-family: serif;
+    text-align: center;
+}
+
+.msg-container{
+    width: 15%;
+    position: absolute;
+    top:90%;
+    left: 40%;
+    border: 1px solid #fff;
+    border-radius: 28px;
+    color: #fff;
+    text-align: center;
+    font: 1em sans-serif;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.result-modal {
+    display: none; 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 30vw;
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 18px;
+    z-index: 1000; 
+  }
+  .choice-btn, .computer-choice {
+    transition: transform 0.02s ease-in-out;
+   } 
+
+  #restart-game-button{
+    width: 30%;
+    background: red;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+    border: 1px solid #fff;
+    padding: 10px;
+    border-radius: 28px;
+    cursor: pointer;
+  }
