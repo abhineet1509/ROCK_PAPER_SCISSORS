@@ -24,7 +24,7 @@ The result is instantly displayed with visuals and score update.
 
 🔗 Live Demo
 Click here to play the game
-https://deft-nougat-82e4e6.netlify.app/
+https://spiffy-rabanadas-f7e587.netlify.app/
 
 📌 Further Improvements
 Add score history and reset button.
