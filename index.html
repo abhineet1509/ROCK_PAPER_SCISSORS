@@ -4,29 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>ROCK_PAPER_SCISSORS</title>
+    <title>Rock Paper Scissors</title>
 </head>
 <body>
-    <div class="container">
-        <div class="items">  
-            <div class="message">
+    <div class="game-container">
+        <div class="game-content">  
+            <div class="game-feedback">
                 <img  id="lose" src="IMAGES\62e858581f694027a56caf1bc08f33ce.png">
                 <img id="win" src="IMAGES\pngwing.com.png">
                 <p id="draw">DRAW</p>
             </div>
             <div class="choices">
-            <div class="user-choices">
-                <img class="image" id="scissors" src="IMAGES\1.png">
-                <img class="image" id="rock" src="IMAGES\2.png">
-                <img class="image" id="paper" src="IMAGES\3.png">
+            <div class="player-choices">
+                <img class="choice-btn" id="scissors" src="IMAGES\1.png">
+                <img class="choice-btn" id="rock" src="IMAGES\2.png">
+                <img class="choice-btn" id="paper" src="IMAGES\3.png">
             </div>
-               <div class="comp-choices">
-                   <img class="image" id="scissors" src="IMAGES\1.png">
-                   <img class="image" id="rock" src="IMAGES\2.png">
-                   <img class="image" id="paper" src="IMAGES\3.png">
-              </div>
+              <div class="computer-choices">
+                <img class="computer-choice" id="comp-scissors" src="IMAGES\1.png">
+                <img class="computer-choice" id="comp-rock" src="IMAGES\2.png">
+                <img class="computer-choice" id="comp-paper" src="IMAGES\3.png">
             </div>
-            <div class="score-card">
+            </div>
+            <div class="scoreboard">
                 <div class="score">
                     <h1 id="your-score">0</h1>
                     <p>You</p>
@@ -39,20 +39,20 @@
         </div>
     </div>
     <div class="msg-container">
-        <p id="showPopupBtn">Exit Game</p>
+        <p id="game-exit-btn">Exit Game</p>
     </div>
-    <div id="popupCard" class="popup-card">
-        <div id="happyCard"> 
+    <div id="result-modal" class="result-modal">
+        <div id="win-modal"> 
             <img src="IMAGES\173986_minion_happy_icon.png">
-            <p id="happyScore"></p>
+            <p id="winning-score"></p>
             <p>Congratulations</p>
-            <button id="closePopupBtn">Restart</button>
+            <button id="restart-game-button">Restart</button>
         </div>
-       <div id="sadCard">
+       <div id="lose-modal">
         <img src="IMAGES\173985_minion_curious_icon.png">
-        <p id="sadScore"></p>
+        <p id="losing-score"></p>
         <p>Oops!</p>
-        <button id="closePopupBtn">Restart</button>
+        <button id="restart-game-button">Restart</button>
        </div>
       </div>
     <script src="script.js"></script>
